@@ -1,6 +1,3 @@
 [submodule "bundle/pathogen"]
 	path = bundle/pathogen
 	url = http://github.com/tpope/vim-pathogen.git
-[submodule "bundle/command-t"]
-	path = bundle/command-t
-	url = http://git.wincent.com/command-t.git
