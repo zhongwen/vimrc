@@ -22,3 +22,6 @@
 [submodule "bundle/pylint"]
 	path = bundle/pylint
 	url = https://github.com/vim-scripts/pylint.vim.git
+[submodule "bundle/ipython"]
+	path = bundle/ipython
+	url = https://github.com/ivanov/vim-ipython.git
