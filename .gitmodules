@@ -25,3 +25,12 @@
 [submodule "bundle/ipython"]
 	path = bundle/ipython
 	url = https://github.com/ivanov/vim-ipython.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule "bundle/autocomplpop"]
+	path = bundle/autocomplpop
+	url = https://github.com/toupeira/vim-autocomplpop.git
+[submodule "bundle/taglist"]
+	path = bundle/taglist
+	url = https://github.com/vim-scripts/taglist.vim.git

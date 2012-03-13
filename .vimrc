@@ -1,5 +1,5 @@
 runtime bundle/pathogen/autoload/pathogen.vim
-
+runtime bundle/ipython/ftplugin/python/ipy.vim
 " Pathogen load
 filetype off
 
@@ -95,9 +95,16 @@ set completeopt=menuone,longest,preview
 set foldlevel=99
 set list listchars=tab:»·,trail:·
 
-map <leader>e :e! ~/.vimrc<cr>
+map <leader>e :e! ~/.vim/.vimrc<cr>
 autocmd! bufwritepost vimrc source ~/.vimrc
 
 set wildmenu
 map <buffer> K :execute "!pydoc " . expand("<cword>")<CR>
 imap <silent> <C-C> <C-R>=string(eval(input("calculate: ")))<CR>
+
+let g:AutoComplPop_Behavior = { 
+\ 'c': [ {'command' : "\<C-x>\<C-o>",
+\ 'pattern' : ".",
+\ 'repeat' : 0}
+\ ] 
+\}
