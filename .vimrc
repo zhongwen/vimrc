@@ -22,7 +22,7 @@ if has("gui_running")
     set lines=45
     set columns=84
     "set gui font
-    set guifont=Courier\ 12
+    set guifont=Monospace\ 12
 endif
 set background=dark
 set tabstop=4

@@ -1,3 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/home/stephen/.vim'
+let g:netrw_dirhist_2='/home/stephen/ImageIndex/SRTP'
+let g:netrw_dirhist_3='/home/stephen/SRTP_new/image_search/similar'
+let g:netrw_dirhist_4='/home/stephen/SRTP_new/image_search/hashtable'
