@@ -31,3 +31,6 @@
 [submodule "bundle/taglist"]
 	path = bundle/taglist
 	url = https://github.com/vim-scripts/taglist.vim.git
+[submodule "peaksea"]
+	path = peaksea
+	url = https://github.com/vim-scripts/peaksea
