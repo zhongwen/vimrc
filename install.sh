@@ -1,3 +1,3 @@
 mv ../vimrc ../.vim
-ln -s vimrc ~/.vimrc
+ln -s ~/.vim/vimrc ~/.vimrc
 git submodule update --init
