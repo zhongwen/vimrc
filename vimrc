@@ -96,7 +96,7 @@ set completeopt=menuone,longest,preview
 set foldlevel=99
 set list listchars=tab:»·,trail:·
 
-map <leader>e :e! ~/.vim/.vimrc<cr>
+map <leader>e :e! ~/.vimrc<cr>
 autocmd! bufwritepost vimrc source ~/.vimrc
 
 set wildmenu
