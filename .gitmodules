@@ -31,9 +31,6 @@
 [submodule "peaksea"]
 	path = peaksea
 	url = https://github.com/vim-scripts/peaksea
-[submodule "ctrlp.vim"]
-	path = ctrlp.vim
-	url = https://github.com/kien/ctrlp.vim
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim
