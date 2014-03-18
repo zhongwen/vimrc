@@ -1,5 +1,6 @@
 runtime bundle/pathogen/autoload/pathogen.vim
 runtime bundle/ipython/ftplugin/python/ipy.vim
+runtime bundle/ctrlp/autoload/ctrlp.vim
 " Pathogen load
 filetype off
 
@@ -108,3 +109,6 @@ let g:AutoComplPop_Behavior = {
 \ 'repeat' : 0}
 \ ] 
 \}
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'

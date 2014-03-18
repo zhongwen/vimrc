@@ -1,9 +1,6 @@
 [submodule "bundle/pathogen"]
 	path = bundle/pathogen
 	url = http://github.com/tpope/vim-pathogen.git
-[submodule "bundle/command-t"]
-	path = bundle/command-t
-	url = http://github.com/wincent/Command-T.git
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
@@ -34,3 +31,9 @@
 [submodule "peaksea"]
 	path = peaksea
 	url = https://github.com/vim-scripts/peaksea
+[submodule "ctrlp.vim"]
+	path = ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = https://github.com/kien/ctrlp.vim
