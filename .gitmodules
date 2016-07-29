@@ -34,3 +34,6 @@
 [submodule "bundle/python-mode"]
 	path = bundle/python-mode
 	url = https://github.com/klen/python-mode
+[submodule "bundle/Vundle.vim"]
+	path = bundle/Vundle.vim
+	url = https://github.com/gmarik/Vundle.vim.git
