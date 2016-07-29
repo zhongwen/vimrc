@@ -17,6 +17,8 @@ Plugin 'google/vim-codefmt'
 " " `:help :Glaive` for usage.
 Plugin 'google/vim-glaive'
 
+Plugin 'Yggdroot/indentLine'
+
 " more Plugin commands
 " ...
 call vundle#end()            " required
