@@ -8,10 +8,21 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'Vundle/Vundle.vim.git'
 Plugin 'scrooloose/nerdtree.git'
+Plugin 'ctrlpvim/ctrlp.vim.git'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'google/vim-maktaba'
+Plugin 'google/vim-codefmt'
+" Also add Glaive, which is used to configure codefmt's maktaba flags. See
+" " `:help :Glaive` for usage.
+Plugin 'google/vim-glaive'
 
 " more Plugin commands
 " ...
 call vundle#end()            " required
+
+call glaive#Install()
+
 filetype plugin indent on    " required
 
 
@@ -33,9 +44,9 @@ if has("gui_running")
     set guifont=Monospace\ 12
 endif
 set background=dark
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 "delete tab when press 'backspace'
 
 set smarttab
@@ -96,8 +107,9 @@ map <C-L> <C-W>l<C-W>_
 
 let g:SuperTabDefaultCompletionType = "context"
 let g:pydiction_location = '/usr/share/pydiction/complete-dict'
+
 map <leader>td <Plug>TaskList
-au FileType python set omnifunc=pythoncomplete#Complete
+"au FileType python set omnifunc=pythoncomplete#Complete
 set foldmethod=indent
 set completeopt=menuone,longest,preview
 set foldlevel=99
@@ -117,5 +129,22 @@ let g:AutoComplPop_Behavior = {
 \ ] 
 \}
 
+
+" CtrlP
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
+
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
+
+
+au FileType python setl sw=2 sts=2 et
+
+Glaive codefmt plugin[mappings]
