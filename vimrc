@@ -1,11 +1,18 @@
-runtime bundle/pathogen/autoload/pathogen.vim
-runtime bundle/ipython/ftplugin/python/ipy.vim
-runtime bundle/ctrlp/autoload/ctrlp.vim
-" Pathogen load
-filetype off
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-call pathogen#infect()
-call pathogen#helptags()
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'Vundle/Vundle.vim.git'
+Plugin 'scrooloose/nerdtree.git'
+
+" more Plugin commands
+" ...
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 
 syntax on
