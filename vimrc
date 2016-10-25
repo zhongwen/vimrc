@@ -18,6 +18,12 @@ Plugin 'google/vim-codefmt'
 Plugin 'google/vim-glaive'
 
 Plugin 'Yggdroot/indentLine'
+Plugin 'tmhedberg/SimpylFold'
+Plugin 'scrooloose/syntastic'
+Plugin 'nvie/vim-flake8'
+Plugin 'tpope/vim-fugitive'
+Plugin 'godlygeek/tabular'
+Plugin 'klen/python-mode'
 
 " more Plugin commands
 " ...
@@ -28,6 +34,7 @@ call glaive#Install()
 filetype plugin indent on    " required
 
 
+let python_highlight_all=1
 syntax on
 let mapleader=","
 "load filetype plugins and indent files
@@ -93,7 +100,6 @@ set showcmd
 set wrap
 
 nnoremap <silent><F5> :redraw!<CR>
-let python_hightlight_all=1
 
 "NERDTree plugin
 let NERDTreeWinPos = "left" "where NERD tree window is placed on the screen
@@ -150,3 +156,7 @@ let g:ctrlp_custom_ignore = {
 au FileType python setl sw=2 sts=2 et
 
 Glaive codefmt plugin[mappings]
+
+
+let g:pymode_lint_ignore = 'E111,W0311,E114'
+let g:pymode_options_colorcolumn = 0
